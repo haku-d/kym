@@ -1,0 +1,29 @@
+@import "reset";
+@import "custom";
+
+body {
+	color: #736963;
+}
+
+.kym {
+	padding-top: 80px;
+}
+
+.text-center {
+	text-center: center;
+}
+
+.head {
+	border-bottom: 1px solid #ccc;
+	padding: 19px;
+	margin: 0 -19px;
+}
+
+.expense {
+	width: 100%;
+	list-style-type: none;
+
+	li {
+		padding: 10px 0;
+	}
+}
