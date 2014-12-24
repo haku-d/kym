@@ -6,8 +6,20 @@ ul {
   border-radius: 0;
   outline: 0; }
 
+.btn {
+  display: block; }
+
+.chosen-container-single .chosen-single {
+  height: 40px;
+  border-radius: 0;
+  background: none;
+  box-shadow: none; }
+  .chosen-container-single .chosen-single span, .chosen-container-single .chosen-single div {
+    padding: 7px 0; }
+
 body {
-  color: #736963; }
+  color: #736963;
+  font-size: 13pt; }
 
 .kym {
   padding-top: 80px; }
@@ -22,8 +34,115 @@ body {
 
 .expense {
   width: 100%;
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 10px 0; }
   .expense li {
-    padding: 10px 0; }
+    margin-bottom: 10px;
+    border: 1px solid #FFF; }
+    .expense li label {
+      padding: 10px;
+      margin: 0; }
+      .expense li label:first-child {
+        border-right: 1px solid #FFF; }
+    .expense li .color1 {
+      background-color: #1D5E7A;
+      color: #FFF; }
+    .expense li .color2 {
+      background-color: #35ABDE;
+      color: #FFF; }
+    .expense li .color3 {
+      background-color: #9186B8;
+      color: #FFF; }
+
+/*body *              {display:inline;}*/
+ol.calendar {
+  width: 100%;
+  margin: 10px 0;
+  padding: 0;
+  display: block;
+  min-height: 200px; }
+
+li {
+  list-style: none; }
+
+p.link {
+  text-align: center;
+  display: block; }
+
+h1 {
+  display: block;
+  width: 350px;
+  height: 76px;
+  margin: 15px auto; }
+
+.calender-header {
+  width: 52em;
+  margin: 0 auto;
+  padding: 12px 0 0 20px; }
+
+.calender-header li {
+  width: 6em;
+  float: left;
+  padding: 5px; }
+
+/*
+ * Day styles
+ -------------------------*/
+.calendar li li {
+  width: 14.2857142857%;
+  float: left;
+  overflow: auto;
+  border-right: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+  padding: 20px;
+  overflow: hidden; }
+
+/*
+ * Day content (UL/OL & P)
+ -------------------------*/
+li li p {
+  font-size: .7em;
+  display: block; }
+
+li li ol {
+  width: auto; }
+
+li li ul li,
+li li ol li {
+  font-size: .7em;
+  display: block;
+  height: auto;
+  width: auto;
+  background: none;
+  margin: 0;
+  padding: .2em 0;
+  float: none; }
+
+/*
+ * Holiday class
+ -------------------------*/
+/**
+ * Today class
+ */
+li li.today {
+  background-color: #DFEDFA;
+  color: #0072C6;
+  font-weight: bold; }
+
+/*
+ * Inactive months
+ -------------------------*/
+li#lastmonth li,
+li#nextmonth li {
+  background-color: #f2f2f2; }
+
+li#dayheader {
+  border-bottom: 1px solid #f2f2f2; }
+
+li#dayheader li {
+  background: none;
+  height: auto;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */

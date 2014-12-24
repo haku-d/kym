@@ -2,3 +2,19 @@
 	border-radius: 0;
 	outline: 0;
 }
+
+.btn {
+	display: block;
+}
+
+// Custom chosen stylesheet
+.chosen-container-single .chosen-single {
+	height: 40px;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+
+	span, div {
+		padding: 7px 0;
+	}
+}
